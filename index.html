@@ -7,8 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cynthia</h1>
+    <h1>cynthia</h1>
+    <div class ="container"></div>
+    <!--kontroller för filter,sort,Map (rea)-->
+    <div class="controls">
+    <!-- filtera: kategori-->
+             <!-- category control-->
+    <div class="control-item">
+        <label>Kategori</label>
+        <select id="Filter-category">
+            <option value="alla">Alla</option>
+            <option value="Elektronik">Elektronik</option>
+            <option value="Klader">kläder</option>
+        </select>
+    </div> 
 
+     <!--Sorting control-->
+     <div class="control-item">
+     <label>Sortera</label>
+     <select id="sort price">
+        <option value="normal">Standard</option>
+        <option value="low-high">Pris: Lågt till högt</option>
+        <option value="high-low">Pris:Högt till Lågt</option>
+     </select>
+     </div>
+
+     <!-- Discount control-->
+      <div class="control-item">
+      <label>Rea</label>
+      <button id="btn-discount"> Ge 20% Rabatt</button>
+      </div>
+</div>
+<!--product container-->
+<div id="product-container" class="product-container"></div>
     <script src="app.js"></script>
 </body>
 </html>
